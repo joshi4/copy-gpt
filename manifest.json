@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "gpt-copy",
+  "version": "1.0",
+  "description": "Copy responses from ChatGPT",
+  "icons": {
+    "48": "icons/48.png"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "*://chat.openai.com/chat/*"
+      ],
+      "js": [
+        "copy.js"
+      ]
+    }
+  ]
+}
