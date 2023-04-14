@@ -13,7 +13,13 @@ const callback = function (mutationList, observer) {
     }
 
     const icons = box.querySelector('.self-end');
+    // get existing button classes for an icon and add them to the new button
+    // this is to make the button look like the other icons
+    const iconClasses = icons.querySelector('button').classList;
+
+
     const button = document.createElement('button');
+    button.classList = iconClasses
     button.classList.add('injected-button');
     button.innerText = 'Copy';
     // Taken from the icon GPT uses for copying code
