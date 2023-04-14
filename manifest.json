@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "gpt-copy",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "Copy responses from ChatGPT",
   "icons": {
     "48": "icons/48.png"
